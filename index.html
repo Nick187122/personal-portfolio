@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicholas Oyiolo | Cybersecurity Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Nicholas Oyiolo</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="theme-toggle" aria-label="Toggle theme">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="section home-section">
+        <div class="home-content">
+          <h1>Hello, I'm <span class="highlight">Nicholas Oyiolo</span></h1>
+          <p class="subtitle">Cybersecurity Specialist & Software Developer</p>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn primary">View My Work</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/oyiolon"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://instagram.com/nic._oh"
+              class="social-icon"
+              target="_blank"
+              id="instagram-link"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://x.com/NOyiolo"
+              class="social-icon"
+              target="_blank"
+              id="twitter-link"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://wa.me/+254742167151"
+              class="social-icon"
+              target="_blank"
+              id="whatsapp-link"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <div class="profile-image">
+          <img src="passport.png" alt="Nicholas Oyiolo" id="profile-pic" />
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section about-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a fourth-year Computer Science student specializing in
+              cybersecurity and secure software development. My passion lies in
+              building applications with security as a fundamental component,
+              not an afterthought.
+            </p>
+
+            <div class="skills-container">
+              <div class="skill-category">
+                <h3>Security Skills</h3>
+                <ul>
+                  <li>Secure Coding Practices</li>
+                  <li>Penetration Testing</li>
+                  <li>Cryptography</li>
+                  <li>OWASP Top 10</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3>Development Skills</h3>
+                <ul>
+                  <li>Python/JavaScript</li>
+                  <li>Web Application Security</li>
+                  <li>Secure API Design</li>
+                  <li>Database Security</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section projects-section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container" id="projects-container">
+          <!-- Projects will be loaded by JavaScript -->
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="project-info">
+              <h3>Secure Auth System</h3>
+              <p>
+                A multi-factor authentication system with biometric
+                verification.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">JWT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="project-info">
+              <h3>Vulnerability Scanner</h3>
+              <p>Automated web application vulnerability scanner.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Security</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn primary">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <h3>Direct Contact</h3>
+            <p><i class="fas fa-envelope"></i> oyiolon@gmail.com</p>
+            <div class="contact-social">
+              <p>Connect with me:</p>
+              <div class="social-links">
+                <a
+                  href="https://github.com/oyiolon"
+                  target="_blank"
+                  class="social-icon"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://instagram.com/nic._oh"
+                  class="social-icon"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://x.com/NOyiolo"
+                  class="social-icon"
+                  target="_blank"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="https://wa.me/+254742167151"
+                  class="social-icon"
+                  target="_blank"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="current-year"></span> Nicholas Oyiolo. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
